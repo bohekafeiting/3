@@ -1,5 +1,12 @@
 function calculate_median(arr) {
-  //请勿改动函数名
+  var len=arr.length;
+	var sum=0,i=1;
+	while(i<len){
+		sum=sum+arr[i];
+		i=i+2;
+	}
+	sum=sum/parseInt(len/2);
+	return sum;
 }
 
 module.exports = calculate_median;
